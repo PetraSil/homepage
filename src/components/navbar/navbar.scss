@@ -1,0 +1,56 @@
+@import "../global/_global.scss";
+
+.navbar {
+  @include default-flex($justify: space-between, $direction: row);
+
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  padding: $size-one-half $size-one;
+
+  * {
+    color: $text-white;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &-right {
+    width: 50%;
+
+    @include default-flex($justify: flex-end, $direction: row);
+
+    span {
+      margin: $size-one-half $size-two;
+      position: relative;
+      cursor: pointer;
+  
+      @include default-flex;
+      @include default-transition;
+      
+      &::after {
+        position: absolute;
+        left: 0%;
+        bottom: -$size-one-half;
+        content: "";
+        width: 0%;
+        border-top: $size-one-tenth solid $theme-cyan;
+
+        @include default-transition;
+      }
+
+      &:hover {
+        color: $hover-white;
+
+        &::after {
+          width: 100%;
+        }
+      };
+    }  
+  }
+
+  &-left {
+    margin-left: $size-one;
+
+    @include default-flex($direction: row);
+  }
+}

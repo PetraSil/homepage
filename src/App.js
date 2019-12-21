@@ -1,9 +1,22 @@
 import React from 'react';
+import DefaultContainer from './containers/DefaultContainer';
+import Navbar from './components/navbar/Navbar';
+import Intro from './components/intro/Intro';
+import FluffText from './components/fluff/FluffText';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-    </div>
+    <>
+      <Navbar />
+      <DefaultContainer 
+      content={
+        <>
+        <Intro />
+        <FluffText text={"Home"} />
+        </>
+      }
+      />
+    </>
   );
 }
 

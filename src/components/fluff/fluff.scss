@@ -1,0 +1,24 @@
+@import "../global/_global.scss";
+
+.fluff-text {
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -2rem;
+  bottom: 5rem;
+  color: white;
+  font-size: 5rem;
+
+  span {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 6rem;
+      left: 50%;
+      content: "";
+      border-top: 0.2rem solid $theme-cyan;
+      width: 10rem;
+    }
+  }
+}

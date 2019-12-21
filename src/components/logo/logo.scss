@@ -1,0 +1,21 @@
+@import "../global/_global.scss";
+
+.logo {
+  padding: $size-one-half;
+  background-color: $background-black;
+  cursor: pointer;
+  letter-spacing: -0.05rem;
+
+  @include default-transition;
+
+  &-icons {
+    margin: 0 $size-one;
+
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+      cursor: pointer;
+      margin: 0 $size-one-half;
+    }
+  }
+}

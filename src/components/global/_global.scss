@@ -1,0 +1,35 @@
+// COLOURS
+$pure-white: rgb(255, 255, 255);
+$theme-cyan: rgb(7, 172, 219);
+$button-white: rgb(250, 250, 250);
+$text-white: rgb(224, 224, 244);
+$background-black: rgb(30, 30, 30);
+$hover-white: rgba(250, 250, 250, 0.5);
+
+//BREAKPOINTS
+
+//GENERAL SIZES
+$size-one-tenth: 0.1rem;
+$size-one-third: 0.3rem;
+$size-one-fifth: 0.2rem;
+$size-one-half: 0.5rem;
+$size-one: 1rem;
+$size-one-plus-fourth: 1.25rem;
+$size-one-plus-half: 1.5rem;
+$size-two: 2rem;
+$size-three: 3rem;
+$size-four: 4rem;
+
+//ALIGNMENTS
+@mixin default-flex($justify: center, $align: center, $direction: column) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+//ANIMATIONS
+@mixin default-transition($target: all, $time: 0.15s, $type: ease-in-out) {
+	transition: $time $target $type;
+}
+

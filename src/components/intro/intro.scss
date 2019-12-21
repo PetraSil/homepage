@@ -1,0 +1,36 @@
+@import "../global/_global.scss";
+
+.intro-container {
+  h1 {
+    color: $pure-white;
+    font-size: $size-four;
+    font-weight: 400;
+    margin-bottom: $size-two;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4rem;
+      height: 0.1rem;
+      border-bottom: 0.1rem $theme-cyan solid;
+      top: 110%;
+    }
+  }
+
+  h2 {
+    color: $text-white;
+    font-weight: 200;
+    margin-bottom: $size-one-plus-half;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $text-white;
+    font-weight: 200;
+  }
+
+  .button {
+    margin-top: $size-two;
+  }
+}

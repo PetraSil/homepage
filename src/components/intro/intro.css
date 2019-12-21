@@ -1,0 +1,33 @@
+.intro-container h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.intro-container h1::before {
+  position: absolute;
+  content: "";
+  width: 4rem;
+  height: 0.1rem;
+  border-bottom: 0.1rem #07acdb solid;
+  top: 110%;
+}
+
+.intro-container h2 {
+  color: #e0e0f4;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.intro-container p {
+  font-size: 1.1rem;
+  color: #e0e0f4;
+  font-weight: 200;
+}
+
+.intro-container .button {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=intro.css.map */

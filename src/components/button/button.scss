@@ -1,0 +1,21 @@
+@import "../global/_global.scss";
+
+.button {
+	text-transform: uppercase;
+	padding: $size-one-third $size-two;
+	border-radius: $size-one-plus-fourth;
+	border: $size-one-tenth solid transparent;
+	cursor: pointer;
+
+	@include default-transition;
+
+	&:hover {
+		background-color: $background-black;
+		border: $size-one-tenth solid $theme-cyan;
+	}
+
+	&-default {
+		background-color: $theme-cyan;
+		color: $button-white;
+	}
+}

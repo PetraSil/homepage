@@ -1,0 +1,24 @@
+.fluff-text {
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  left: -2rem;
+  bottom: 5rem;
+  color: white;
+  font-size: 5rem;
+}
+
+.fluff-text span {
+  position: relative;
+}
+
+.fluff-text span::after {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  content: "";
+  border-top: 0.2rem solid #07acdb;
+  width: 10rem;
+}
+/*# sourceMappingURL=fluff.css.map */

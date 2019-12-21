@@ -1,0 +1,20 @@
+.logo {
+  padding: 0.5rem;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  letter-spacing: -0.05rem;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+.logo-icons {
+  margin: 0 1rem;
+}
+
+.logo-icons img {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+/*# sourceMappingURL=logo.css.map */
