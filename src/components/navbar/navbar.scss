@@ -23,6 +23,8 @@
       margin: $size-one-half $size-two;
       position: relative;
       cursor: pointer;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
   
       @include default-flex;
       @include default-transition;

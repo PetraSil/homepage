@@ -5,12 +5,13 @@
   position: absolute;
   left: -2rem;
   bottom: 5rem;
-  color: white;
-  font-size: 5rem;
 }
 
 .fluff-text span {
   position: relative;
+  font-weight: 200;
+  color: white;
+  font-size: 5rem;
 }
 
 .fluff-text span::after {

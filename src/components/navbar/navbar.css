@@ -45,6 +45,8 @@
   margin: 0.5rem 2rem;
   position: relative;
   cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

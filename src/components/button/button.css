@@ -4,6 +4,7 @@
   border-radius: 1.25rem;
   border: 0.1rem solid transparent;
   cursor: pointer;
+  font-weight: 400;
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
 }

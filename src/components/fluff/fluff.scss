@@ -6,11 +6,12 @@
   position: absolute;
   left: -2rem;
   bottom: 5rem;
-  color: white;
-  font-size: 5rem;
 
   span {
     position: relative;
+    font-weight: 200;
+    color: white;
+    font-size: 5rem;
 
     &::after {
       position: absolute;

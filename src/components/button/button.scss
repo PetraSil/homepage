@@ -6,6 +6,7 @@
 	border-radius: $size-one-plus-fourth;
 	border: $size-one-tenth solid transparent;
 	cursor: pointer;
+	font-weight: 400;
 
 	@include default-transition;
 

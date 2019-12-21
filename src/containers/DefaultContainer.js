@@ -2,9 +2,9 @@ import React from 'react';
 import './container.css';
 
 const DefaultContainer = ({ content }) => 
-	<container className="container container-default">
+	<section className="container container-default">
 		{content}
-	</container>
+	</section>
 ;
 
 export default DefaultContainer;

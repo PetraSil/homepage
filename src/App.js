@@ -1,22 +1,22 @@
 import React from 'react';
-import DefaultContainer from './containers/DefaultContainer';
 import Navbar from './components/navbar/Navbar';
-import Intro from './components/intro/Intro';
-import FluffText from './components/fluff/FluffText';
+import Home from './pages/Home';
+import Work from './pages/Work';
+import Contact from './pages/Contact';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <DefaultContainer 
-      content={
-        <>
-        <Intro />
-        <FluffText text={"Home"} />
-        </>
-      }
-      />
-    </>
+    <Router>
+      <>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/work" component={Work} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </>
+    </Router>
   );
 }
 
