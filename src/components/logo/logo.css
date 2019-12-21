@@ -2,7 +2,9 @@
   padding: 0.5rem;
   background-color: #1e1e1e;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
 }

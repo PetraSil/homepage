@@ -4,7 +4,9 @@
   padding: $size-one-half;
   background-color: $background-black;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 400;
+  letter-spacing: $size-one-tenth;
+  font-size: 0.9rem;
 
   @include default-transition;
 
@@ -12,8 +14,8 @@
     margin: 0 $size-one;
 
     img {
-      height: 1.5rem;
-      width: 1.5rem;
+      height: $size-one-plus-half;
+      width: $size-one-plus-half;
       cursor: pointer;
       margin: 0 $size-one-half;
     }

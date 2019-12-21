@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {  useEffect, useContext, createContext, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 
 const App = () => {
   return (

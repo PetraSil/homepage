@@ -3,12 +3,12 @@ import DefaultContainer from '../containers/DefaultContainer';
 import Intro from '../components/intro/Intro';
 import FluffText from '../components/fluff/FluffText';
 
-const Home = () => 
+const Home = () =>
   <DefaultContainer 
   content={
     <>
-    <Intro />
-    <FluffText text={"Home"} />
+      <Intro />
+      <FluffText text={"Home"}/>
     </>
   }
   />
