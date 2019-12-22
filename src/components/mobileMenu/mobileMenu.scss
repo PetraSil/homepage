@@ -1,0 +1,28 @@
+@import "../global/_global.scss";
+
+.mobile-menu {
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 100vh;
+  background-color: $background-black;
+  top: 0;
+  z-index: 1;
+
+  @include default-transition($time: 0.3s);
+  @include default-flex;
+
+  h3 {
+    color: $text-white;
+    font-weight: 400;
+    padding: $size-one;
+    font-size: $size-two;
+    cursor: pointer;
+
+    @include default-transition;
+
+    &:hover {
+      color: $hover-white;
+    }
+  }
+}

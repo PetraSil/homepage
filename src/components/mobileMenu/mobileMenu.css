@@ -1,0 +1,39 @@
+.mobile-menu {
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #141414;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-menu h3 {
+  color: #e0e0f4;
+  font-weight: 400;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+.mobile-menu h3:hover {
+  color: rgba(250, 250, 250, 0.5);
+}
+/*# sourceMappingURL=mobileMenu.css.map */

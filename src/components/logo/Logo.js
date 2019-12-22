@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Logo = () =>
   <>
-     <Link to="/">
+     <Link exact to="/">
       <span className="logo">
         PETRA SILAVUORI
       </span>
