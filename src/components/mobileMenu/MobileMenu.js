@@ -2,16 +2,16 @@ import React from 'react';
 import './mobileMenu.css';
 import { NavLink } from 'react-router-dom'
 
-const MobileMenu = ({ open }) =>
+const MobileMenu = ({ open, setMobile }) =>
     <nav className="mobile-menu" 
       style={{width: open ? "100%" : "0", opacity: open ? "1" : "0"}}>
-      <NavLink exact to="/work" activeClassName="active">
+      <NavLink exact to="/work" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3>Work</h3>
       </NavLink>
-      <NavLink exact to="/contact" activeClassName="active">
+      <NavLink exact to="/contact" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3>Contact</h3>
       </NavLink>
-      <NavLink exact to="/" activeClassName="active">
+      <NavLink exact to="/" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3>Home</h3>
       </NavLink>    
     </nav>

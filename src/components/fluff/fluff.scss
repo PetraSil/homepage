@@ -3,10 +3,12 @@
 .fluff-text {
   text-transform: uppercase;
   transform: rotate(-90deg);
-  position: absolute;
-  left: -6rem;
-  bottom: 30%;
-  width: 20rem;
+  position: fixed;
+  left: 0;
+  top: 90vh;
+  width: 4rem;
+  z-index: 2;
+  
 
   @include breakpoint-small {
     display: none;
@@ -16,15 +18,17 @@
     position: relative;
     font-weight: 200;
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
+    padding-left: 5rem;
+    border-bottom: 0.2rem solid $theme-cyan;
 
     &::after {
       position: absolute;
-      top: 5rem;
-      left: 50%;
+      top: 1rem;
+      left: 10%;
       content: "";
-      border-top: 0.2rem solid $theme-cyan;
-      width: 10rem;
+      width: 8rem;
+      box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
     }
   }
 }

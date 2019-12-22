@@ -4,17 +4,13 @@ import linkedin from './linkedin.png';
 import github from './github.png';
 import { Link } from 'react-router-dom'
 
-const Logo = () =>
+const Logo = ({ open }) =>
   <>
      <Link exact to="/">
-      <span className="logo">
+      <span className="logo" style={{ display: open ? "none" : "block" }}>
         PETRA SILAVUORI
       </span>
     </Link>
-    {/*<div className="logo-icons">
-      <img src={linkedin} alt="Linkedin logo link."></img>
-      <img src={github} alt="Github logo link."></img>
-</div>*/}
   </>
 ;
 

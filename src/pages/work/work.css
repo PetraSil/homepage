@@ -18,4 +18,8 @@ article::after {
   -webkit-box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
           box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
 }
+
+article:last-of-type {
+  margin-bottom: 5rem;
+}
 /*# sourceMappingURL=work.css.map */

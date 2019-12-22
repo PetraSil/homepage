@@ -3,6 +3,8 @@
 .page-title {
   color: $text-white;
   font-size: $size-three;
-  padding: $size-two;
+  padding: $size-five $size-two;
   font-weight: 400;
+  white-space: nowrap;
 }
+

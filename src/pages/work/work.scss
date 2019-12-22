@@ -18,6 +18,10 @@ article {
     border-radius: 50%;
     box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
   }
+
+  &:last-of-type {
+    margin-bottom: $size-five;
+  }
 }
 
 

@@ -2,10 +2,11 @@
   text-transform: uppercase;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  position: absolute;
-  left: -6rem;
-  bottom: 30%;
-  width: 20rem;
+  position: fixed;
+  left: 0;
+  top: 90vh;
+  width: 4rem;
+  z-index: 2;
 }
 
 @media (max-width: 900px) {
@@ -18,15 +19,18 @@
   position: relative;
   font-weight: 200;
   color: white;
-  font-size: 4rem;
+  font-size: 2rem;
+  padding-left: 5rem;
+  border-bottom: 0.2rem solid #07acdb;
 }
 
 .fluff-text span::after {
   position: absolute;
-  top: 5rem;
-  left: 50%;
+  top: 1rem;
+  left: 10%;
   content: "";
-  border-top: 0.2rem solid #07acdb;
-  width: 10rem;
+  width: 8rem;
+  -webkit-box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
+          box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
 }
 /*# sourceMappingURL=fluff.css.map */
