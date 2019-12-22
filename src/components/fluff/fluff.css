@@ -8,6 +8,12 @@
   width: 20rem;
 }
 
+@media (max-width: 900px) {
+  .fluff-text {
+    display: none;
+  }
+}
+
 .fluff-text span {
   position: relative;
   font-weight: 200;

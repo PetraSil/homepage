@@ -5,7 +5,8 @@ import FluffText from '../components/fluff/FluffText';
 import './pages.css';
 
 const Home = () =>
-  <DefaultContainer 
+  <DefaultContainer
+   
   content={
     <>
       <Intro />

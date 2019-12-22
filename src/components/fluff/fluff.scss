@@ -8,6 +8,10 @@
   bottom: 10rem;
   width: 20rem;
 
+  @include breakpoint-small {
+    display: none;
+  }
+
   span {
     position: relative;
     font-weight: 200;

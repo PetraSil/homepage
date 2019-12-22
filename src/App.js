@@ -11,10 +11,10 @@ const App = () => {
   
 const { location } = useContext(__RouterContext);
 const pageTransitions = useTransition(location, location => location.pathname, {
-  config: {duration: 500},
-  from: { opacity: 0 },
-  enter: { opacity: 1 },
-  leave: { opacity: 0 }
+  config: { duration: 800 },
+  from: { opacity: 0, transform: "translate(0, 100%)" },
+  enter: { opacity: 1, transform: "translate(0, 0)" },
+  leave: { opacity: 0, transform: "translate(0, -50%)" }
 });
 
   return (

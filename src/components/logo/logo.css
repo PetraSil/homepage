@@ -1,9 +1,9 @@
 .logo {
-  padding: 0.5rem;
   cursor: pointer;
   font-weight: 400;
-  letter-spacing: 0.1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  position: relative;
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
 }
@@ -17,5 +17,15 @@
   width: 1.5rem;
   cursor: pointer;
   margin: 0 0.5rem;
+}
+
+.logo::after {
+  position: absolute;
+  content: "";
+  left: -50%;
+  top: 50%;
+  border-bottom: 0.1rem solid #07acdb;
+  width: 11rem;
+  height: 1rem;
 }
 /*# sourceMappingURL=logo.css.map */

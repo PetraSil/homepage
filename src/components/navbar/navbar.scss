@@ -7,6 +7,7 @@
   position: fixed;
   width: 100%;
   padding: $size-one-half $size-one;
+  height: $size-four;
 
   * {
     color: $text-white;
@@ -47,13 +48,23 @@
           width: 100%;
         }
       };
-    }  
+    }
+    
+    .nav-items-large {
+      @include default-flex($justify: flex-end, $direction: row);
+    }
   }
 
   &-left {
     margin-left: $size-one;
 
     @include default-flex($direction: row);
+  }
+
+  .nav-items-large {
+    @include breakpoint-small {
+      display: none;
+    };
   }
 }
 
@@ -70,4 +81,33 @@
 
     @include default-transition;
   }
+}
+
+.nav-items-small {
+  display: none;
+  margin-top: $size-one;
+  cursor: pointer;
+
+  @include breakpoint-small {
+    display: block;
+  }
+}
+
+#nav-line-first, #nav-line-second, #nav-line-third {
+  height: $size-one-tenth;
+  background-color: $pure-white;
+  margin-bottom: $size-one-half;
+  width: $size-two;
+  margin-left: auto;
+
+  @include default-transition;
+}
+
+#nav-line-second {
+  height: $size-one-fifth;
+  background-color: $theme-cyan;
+}
+
+#nav-line-third {
+  width: $size-one;
 }

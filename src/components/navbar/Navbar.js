@@ -9,15 +9,22 @@ const Navbar = () =>
       <Logo />
     </nav>
     <nav className="navbar-right">
-      <NavLink exact to="/work" activeClassName="active">
-        <span>Work</span>
+      <div className="nav-items-large">
+        <NavLink exact to="/work" activeClassName="active">
+          <span>Work</span>
+        </NavLink>
+        <NavLink exact to="/contact" activeClassName="active" >
+          <span>Contact</span>
+        </NavLink>
+        <NavLink exact to="/" activeClassName="active">
+          <span>Home</span>
       </NavLink>
-      <NavLink exact to="/contact" activeClassName="active" >
-        <span>Contact</span>
-      </NavLink>
-      <NavLink exact to="/" activeClassName="active">
-        <span>Home</span>
-      </NavLink>
+      </div>
+      <div className="nav-items-small">
+        <div id="nav-line-first"></div>
+        <div id="nav-line-second"></div>
+        <div id="nav-line-third"></div>
+      </div>
     </nav>
   </nav>
 ;   

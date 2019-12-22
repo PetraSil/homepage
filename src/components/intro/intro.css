@@ -1,21 +1,39 @@
 .intro-container h1 {
   color: white;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 1rem;
   position: relative;
 }
 
+@media (max-width: 900px) {
+  .intro-container h1 {
+    font-size: 3.3rem;
+  }
+}
+
 .intro-container h2 {
-  color: #e0e0f4;
-  font-weight: 200;
+  color: #c8c8c8;
+  font-weight: 400;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .intro-container h2 {
+    font-size: 1.4rem;
+  }
 }
 
 .intro-container p {
   font-size: 1.1rem;
-  color: #e0e0f4;
+  color: #c8c8c8;
   font-weight: 200;
+}
+
+@media (max-width: 900px) {
+  .intro-container p {
+    font-size: 1rem;
+  }
 }
 
 .intro-container .button {

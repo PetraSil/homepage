@@ -4,21 +4,33 @@
   h1 {
     color: $pure-white;
     font-size: $size-four;
-    font-weight: 400;
+    font-weight: 800;
     margin-bottom: $size-one;
     position: relative;
+
+    @include breakpoint-small {
+      font-size: $size-three-plus-one-third;
+    }
   }
 
   h2 {
-    color: $text-white;
-    font-weight: 200;
+    color: $text-gray;
+    font-weight: 400;
     margin-bottom: $size-one-plus-half;
+
+    @include breakpoint-small {
+      font-size: $size-one-plus-two-fifths;
+    }
   }
 
   p {
     font-size: 1.1rem;
-    color: $text-white;
+    color: $text-gray;
     font-weight: 200;
+
+    @include breakpoint-small {
+      font-size: $size-one;
+    }
   }
 
   .button {

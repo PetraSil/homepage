@@ -1,6 +1,7 @@
 .container {
   min-height: 100vh;
   position: relative;
+  background-color: #141414;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,11 +15,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #141414;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .absolute-wrapper {
   position: absolute;
   width: 100%;
+  overflow-y: hidden;
 }
 /*# sourceMappingURL=container.css.map */

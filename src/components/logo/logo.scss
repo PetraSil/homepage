@@ -1,11 +1,11 @@
 @import "../global/_global.scss";
 
 .logo {
-  padding: $size-one-half;
   cursor: pointer;
   font-weight: 400;
-  letter-spacing: $size-one-tenth;
-  font-size: 0.9rem;
+  font-size: $size-one;
+  white-space: nowrap;
+  position: relative;
 
   @include default-transition;
 
@@ -18,5 +18,15 @@
       cursor: pointer;
       margin: 0 $size-one-half;
     }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -50%;
+    top: 50%;
+    border-bottom: $size-one-tenth solid $theme-cyan;
+    width: 11rem;
+    height: $size-one;
   }
 }

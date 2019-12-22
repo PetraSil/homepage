@@ -8,7 +8,7 @@ const Logo = () =>
   <>
      <Link to="/">
       <span className="logo">
-        - PETRA SILAVUORI -
+        PETRA SILAVUORI
       </span>
     </Link>
     {/*<div className="logo-icons">
