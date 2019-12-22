@@ -3,12 +3,20 @@
 .container {
   min-height: 100vh;
   position: relative;
+  padding: $size-four 0;
   background-color: $background-black;
 
-  @include default-flex;
   @include breakpoint-small {
     width: 80%;
     margin: auto;
+  }
+
+  &-flex {
+    @include default-flex;
+  }
+
+  &-grid {
+    @include default-grid;
   }
 }
 

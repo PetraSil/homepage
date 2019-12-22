@@ -1,5 +1,7 @@
-h3 {
-  color: white;
-  font-size: 5rem;
+.page-title {
+  color: #e0e0f4;
+  font-size: 3rem;
+  padding: 2rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=pages.css.map */

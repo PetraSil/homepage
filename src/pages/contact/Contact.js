@@ -1,14 +1,14 @@
 import React from 'react'
-import DefaultContainer from '../containers/DefaultContainer';
-import FluffText from '../components/fluff/FluffText';
-import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
-import './pages.css';
+import DefaultContainerFlex from '../../containers/DefaultContainerFlex';
+import FluffText from '../../components/fluff/FluffText';
+import { useLocation } from 'react-router-dom';
+import '../pages.css';
 
 const Contact = () => {
   const location = useLocation();
 
   return (
-    <DefaultContainer 
+    <DefaultContainerFlex 
     content={
       <>
         <h3>Contact stuff</h3>

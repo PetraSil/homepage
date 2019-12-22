@@ -1,0 +1,23 @@
+article {
+  padding-bottom: 2rem;
+}
+
+article h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+article h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+article p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  max-width: 20rem;
+}
+/*# sourceMappingURL=article.css.map */

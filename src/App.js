@@ -1,8 +1,8 @@
 import React, {  useEffect, useContext, createContext, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
-import Home from './pages/Home';
-import Work from './pages/Work';
-import Contact from './pages/Contact';
+import Home from './pages/home/Home';
+import Work from './pages/work/Work';
+import Contact from './pages/contact/Contact';
 import { BrowserRouter as Router, withRouter, Switch, Route, __RouterContext } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 import AbsoluteWrapper from './containers/AbsoluteWrapper';

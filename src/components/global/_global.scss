@@ -37,6 +37,13 @@ $size-four: 4rem;
 	flex-direction: $direction;
 }
 
+@mixin default-grid($justify: center, $align: center, $columns: 1fr 1fr) {
+	display: grid;
+	justify-items: $justify;
+	align-content: $align;
+	grid-template-columns: $columns;
+}
+
 //ANIMATIONS
 @mixin default-transition($target: all, $time: 0.15s, $type: ease-in-out) {
 	transition: $time $target $type;

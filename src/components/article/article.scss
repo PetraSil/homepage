@@ -1,0 +1,24 @@
+@import "../global/_global.scss";
+
+article {
+  padding-bottom: $size-two;
+
+  h2 {
+    font-size: $size-one-plus-fourth;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+
+  h3 {
+    font-size: $size-one;
+    font-weight: 400;
+    padding-bottom: $size-one-half;
+    letter-spacing: 0.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    max-width: 20rem;
+  }
+}

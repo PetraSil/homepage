@@ -1,0 +1,23 @@
+@import "../../components/global/global";
+
+article {
+  color: $text-white;
+  position: relative;
+  padding: 0rem 2rem 0 2rem;
+  border-left: 1px solid $theme-cyan;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.6rem;
+    background-color: $theme-cyan;
+    z-index: 1;
+    height: $size-one;
+    width: $size-one;
+    border-radius: 50%;
+    box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
+  }
+}
+
+

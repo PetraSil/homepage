@@ -1,7 +1,18 @@
 .container {
   min-height: 100vh;
   position: relative;
+  padding: 4rem 0;
   background-color: #141414;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.container-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,11 +28,14 @@
           flex-direction: column;
 }
 
-@media (max-width: 900px) {
-  .container {
-    width: 80%;
-    margin: auto;
-  }
+.container-grid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .absolute-wrapper {

@@ -1,6 +1,8 @@
 @import "../components/global/_global.scss";
 
-h3 {
-  color: white;
-  font-size: 5rem;
+.page-title {
+  color: $text-white;
+  font-size: $size-three;
+  padding: $size-two;
+  font-weight: 400;
 }
