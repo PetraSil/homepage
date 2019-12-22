@@ -24,4 +24,22 @@ article {
   }
 }
 
+.work-recent-project {
+  color: white;
+  max-width: 30rem;
+
+  h2 {
+    font-size: $size-one-plus-fourth;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding-bottom: $size-one;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    max-width: 30rem;
+  }
+}
+
 

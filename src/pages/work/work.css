@@ -22,4 +22,22 @@ article::after {
 article:last-of-type {
   margin-bottom: 5rem;
 }
+
+.work-recent-project {
+  color: white;
+  max-width: 30rem;
+}
+
+.work-recent-project h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+.work-recent-project p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  max-width: 30rem;
+}
 /*# sourceMappingURL=work.css.map */
