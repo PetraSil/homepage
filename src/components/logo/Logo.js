@@ -11,10 +11,10 @@ const Logo = () =>
         - PETRA SILAVUORI -
       </span>
     </Link>
-    <div className="logo-icons">
+    {/*<div className="logo-icons">
       <img src={linkedin} alt="Linkedin logo link."></img>
       <img src={github} alt="Github logo link."></img>
-    </div>
+</div>*/}
   </>
 ;
 

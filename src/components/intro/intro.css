@@ -2,17 +2,8 @@
   color: white;
   font-size: 4rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
-}
-
-.intro-container h1::before {
-  position: absolute;
-  content: "";
-  width: 4rem;
-  height: 0.1rem;
-  border-bottom: 0.1rem #07acdb solid;
-  top: 110%;
 }
 
 .intro-container h2 {

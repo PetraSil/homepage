@@ -99,4 +99,19 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+.active {
+  position: relative;
+}
+
+.active span::after {
+  position: absolute;
+  left: 0%;
+  bottom: -0.5rem;
+  content: "";
+  width: 100%;
+  border-top: 0.2rem solid #07acdb;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
 /*# sourceMappingURL=navbar.css.map */

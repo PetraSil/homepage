@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import Logo from '../logo/Logo';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => 
   <nav className="navbar">
@@ -9,15 +9,15 @@ const Navbar = () =>
       <Logo />
     </nav>
     <nav className="navbar-right">
-      <Link to="/work">
+      <NavLink exact to="/work" activeClassName="active">
         <span>Work</span>
-      </Link>
-      <Link to="/contact">
+      </NavLink>
+      <NavLink exact to="/contact" activeClassName="active" >
         <span>Contact</span>
-      </Link>
-      <Link to="/">
+      </NavLink>
+      <NavLink exact to="/" activeClassName="active">
         <span>Home</span>
-    </Link>
+      </NavLink>
     </nav>
   </nav>
 ;   

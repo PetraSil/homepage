@@ -3,20 +3,19 @@
 .button {
 	text-transform: uppercase;
 	padding: $size-one-third $size-two;
-	border-radius: $size-one-plus-fourth;
-	border: $size-one-tenth solid transparent;
+	border: $size-one-tenth solid $theme-cyan;
 	cursor: pointer;
-	font-weight: 400;
+	font-weight: 200;
 
 	@include default-transition;
 
 	&:hover {
-		background-color: $background-black;
-		border: $size-one-tenth solid $theme-cyan;
+		background-color: $theme-cyan;
+		color: $background-black;
 	}
 
 	&-default {
-		background-color: $theme-cyan;
+		background-color: transparent;
 		color: $button-white;
 	}
 }

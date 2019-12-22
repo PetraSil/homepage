@@ -56,3 +56,18 @@
     @include default-flex($direction: row);
   }
 }
+
+.active {
+  position: relative;
+
+  span::after {
+    position: absolute;
+    left: 0%;
+    bottom: -$size-one-half;
+    content: "";
+    width: 100%;
+    border-top: $size-one-fifth solid $theme-cyan;
+
+    @include default-transition;
+  }
+}

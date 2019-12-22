@@ -12,7 +12,6 @@ const Intro = () =>
       <p>They also say I’m a pretty nice person.<br/>
         What a deal I am!
       </p>
-      <Button text={"Contact me"} />
     </div>
 ;
 
