@@ -9,4 +9,8 @@
 a {
   text-decoration: none;
 }
+
+html, body {
+  background-color: #141414;
+}
 /*# sourceMappingURL=index.css.map */
