@@ -19,7 +19,8 @@ const App = () => {
     enter: { opacity: 1},
     leave: { opacity: 0 }
   });
-
+  console.log("with slice: ", location.pathname.slice(1))
+  console.log("without slice: ", location.pathname)
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
