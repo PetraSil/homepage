@@ -5,11 +5,11 @@
   transform: rotate(-90deg);
   position: fixed;
   left: 0;
-  top: 90vh;
+  top: 75vh;
   width: 4rem;
   z-index: 2;
   
-
+  @include default-flex($justify: flex-end, $align: flex-end);
   @include breakpoint-small {
     display: none;
   }
@@ -19,7 +19,8 @@
     font-weight: 200;
     color: white;
     font-size: 2rem;
-    padding-left: 5rem;
+    padding-left: $size-six;
+    padding-bottom: $size-one-third;
     border-bottom: 0.2rem solid $theme-cyan;
 
     &::after {

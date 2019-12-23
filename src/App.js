@@ -11,7 +11,7 @@ import FluffText from './components/fluff/FluffText';
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  
+
   const { location } = useContext(__RouterContext);
   const pageTransitions = useTransition(location, location => location.pathname, {
     config: { duration: 800 },
@@ -24,7 +24,9 @@ const App = () => {
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
-        <FluffText text={ location.pathname.slice(1) == '' ? 'HOME' : location.pathname.slice(1) } />
+        <FluffText 
+          text={ location.pathname.slice(1) == '' ? 'HOME' : location.pathname.slice(1) }
+        />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
             <animated.div key={key} style={props}>
