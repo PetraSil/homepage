@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.99bea0b8.chunk.css",
-    "main.js": "/homepage/static/js/main.919262e1.chunk.js",
-    "main.js.map": "/homepage/static/js/main.919262e1.chunk.js.map",
-    "runtime-main.js": "/homepage/static/js/runtime-main.4fbb87f7.js",
-    "runtime-main.js.map": "/homepage/static/js/runtime-main.4fbb87f7.js.map",
-    "static/js/2.22b00476.chunk.js": "/homepage/static/js/2.22b00476.chunk.js",
-    "static/js/2.22b00476.chunk.js.map": "/homepage/static/js/2.22b00476.chunk.js.map",
-    "index.html": "/homepage/index.html",
-    "precache-manifest.b6edafaf51e8718ba77291e9e10f4f1f.js": "/homepage/precache-manifest.b6edafaf51e8718ba77291e9e10f4f1f.js",
-    "service-worker.js": "/homepage/service-worker.js",
-    "static/css/main.99bea0b8.chunk.css.map": "/homepage/static/css/main.99bea0b8.chunk.css.map",
-    "static/js/2.22b00476.chunk.js.LICENSE": "/homepage/static/js/2.22b00476.chunk.js.LICENSE",
-    "static/media/github.png": "/homepage/static/media/github.d0b4528a.png",
-    "static/media/linkedin.png": "/homepage/static/media/linkedin.34c68c57.png"
+    "main.css": "/home/static/css/main.99bea0b8.chunk.css",
+    "main.js": "/home/static/js/main.5d827c5c.chunk.js",
+    "main.js.map": "/home/static/js/main.5d827c5c.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.27f4abb7.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.27f4abb7.js.map",
+    "static/js/2.22b00476.chunk.js": "/home/static/js/2.22b00476.chunk.js",
+    "static/js/2.22b00476.chunk.js.map": "/home/static/js/2.22b00476.chunk.js.map",
+    "index.html": "/home/index.html",
+    "precache-manifest.8361478a41b87c14d8b32f32a90e5f12.js": "/home/precache-manifest.8361478a41b87c14d8b32f32a90e5f12.js",
+    "service-worker.js": "/home/service-worker.js",
+    "static/css/main.99bea0b8.chunk.css.map": "/home/static/css/main.99bea0b8.chunk.css.map",
+    "static/js/2.22b00476.chunk.js.LICENSE": "/home/static/js/2.22b00476.chunk.js.LICENSE",
+    "static/media/github.png": "/home/static/media/github.d0b4528a.png",
+    "static/media/linkedin.png": "/home/static/media/linkedin.34c68c57.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fbb87f7.js",
+    "static/js/runtime-main.27f4abb7.js",
     "static/js/2.22b00476.chunk.js",
     "static/css/main.99bea0b8.chunk.css",
-    "static/js/main.919262e1.chunk.js"
+    "static/js/main.5d827c5c.chunk.js"
   ]
 }
