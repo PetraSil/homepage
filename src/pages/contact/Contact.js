@@ -9,6 +9,18 @@ import git from './github.png';
 
 const Contact = () => {
 
+  const Links = (e) => {
+    if(e.target.name == "git") {
+      window.open(
+        'https://github.com/PetraSil','_blank'
+      );
+    } else {
+      window.open(
+        'https://www.linkedin.com/in/petrasilavuori','_blank'
+      );    
+    };
+  };
+
   return (
     <DefaultContainerFlex 
     content={
@@ -19,10 +31,12 @@ const Contact = () => {
           textSecond={"So drop me a message on Linkedin if you have something interesting in mind!"}         
         />
         <div className="contact-container-buttons">
-          <Button text={"Contact me"} />
+          <a onClick={Links}>
+            <Button text={"Contact me"} name="linkedin" aria-label="Button link" />
+          </a>
           <span>
-            <img src={git} alt="Icon link to github"></img>
-            <img src={linkedin} alt="Icon link to Linkedin"></img>
+            <img src={git} name="git" alt="Icon link to github" aria-label="Icon of Githug" onClick={Links}></img>
+            <img src={linkedin} name="linkedin" alt="Icon link to Linkedin" aria-label="Icon of Linkedin" onClick={Links}></img>
           </span>        
         </div>
       </section>

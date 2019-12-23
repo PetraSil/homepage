@@ -6,13 +6,13 @@ const MobileMenu = ({ open, setMobile }) =>
     <nav className="mobile-menu" 
       style={{width: open ? "100%" : "0", opacity: open ? "1" : "0"}}>
       <NavLink exact to="/work" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
-        <h3>Work</h3>
+        <h3 aria-label="Navigation link">Work</h3>
       </NavLink>
       <NavLink exact to="/contact" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
-        <h3>Contact</h3>
+        <h3 aria-label="Navigation link">Contact</h3>
       </NavLink>
       <NavLink exact to="/" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
-        <h3>Home</h3>
+        <h3 aria-label="Navigation link">Home</h3>
       </NavLink>    
     </nav>
 ;
