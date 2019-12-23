@@ -19,13 +19,13 @@ const App = () => {
     enter: { opacity: 1},
     leave: { opacity: 0 }
   });
-
+  
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
         <FluffText 
-          text={ location.pathname.replace('/','') == '' ? 'HOME' : location.pathname.replace('/','') }
+          text={ location.pathname.replace(/\//g,'') == '' ? 'HOME' : location.pathname.replace(/\//g,'') }
         />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
