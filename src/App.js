@@ -25,7 +25,7 @@ const App = () => {
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
         <FluffText 
-          text={ location.pathname.replace('/','') == '' ? 'HOME' : location.pathname.replace('/','') }
+          text={ location.pathname.replace('/','') == '' ? 'HOMETEST' : location.pathname.replace('/','') }
         />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
