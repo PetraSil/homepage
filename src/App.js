@@ -19,14 +19,13 @@ const App = () => {
     enter: { opacity: 1},
     leave: { opacity: 0 }
   });
-  console.log("with slice: ", location.pathname.slice(1))
-  console.log("without slice: ", location.pathname)
+
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
         <FluffText 
-          text={ location.pathname.slice(1) == '' ? 'HOME' : location.pathname.slice(1) }
+          text={ location.pathname.replace('/','') == '' ? 'HOME' : location.pathname.replace('/','') }
         />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
