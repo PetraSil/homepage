@@ -6,12 +6,14 @@
 	border: 1px solid $theme-cyan;
 	cursor: pointer;
 	font-weight: 200;
+	box-shadow: 6px 3px 3px rgb(0, 0, 0);
 
 	@include default-transition;
 
 	&:hover {
 		background-color: $theme-cyan;
 		color: $background-black;
+		box-shadow: 6px 6px 6px rgb(0, 0, 0);
 	}
 
 	&-default {
