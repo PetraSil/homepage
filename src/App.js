@@ -34,7 +34,7 @@ const App = () => {
                 <Route path="/home" component={Home} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
-                <Redirect path="/" exact to ="/home" component={Home} />
+                <Redirect path="/" exact to ="home" component={Home} />
               </Switch>
             </animated.div>
           } />
