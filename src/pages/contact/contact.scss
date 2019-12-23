@@ -1,0 +1,36 @@
+@import "../../components/global/global";
+
+.contact-container {
+
+  @include breakpoint-small {
+    width: 80%;
+  }
+
+  h1 {
+    white-space: normal;
+
+    @include breakpoint-small {
+      font-size: $size-three;
+      padding-left: 0;
+    }
+  }
+
+  h2 {
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  &-buttons {
+    @include default-flex($justify: space-between, $align: flex-end, $direction: row);
+
+    img {
+      height: $size-one-plus-half;
+      width: $size-one-plus-half;
+      margin-left: $size-one;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+  .intro-container {
+    width: 80%;
+  }
+}
+
 .intro-container h1 {
   color: white;
   font-size: 4rem;
@@ -8,7 +14,7 @@
 
 @media (max-width: 900px) {
   .intro-container h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
 }
 
@@ -25,9 +31,10 @@
 }
 
 .intro-container p {
-  font-size: 1.1rem;
   color: #c8c8c8;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 900px) {

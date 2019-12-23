@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+  .contact-container {
+    width: 80%;
+  }
+}
+
+.contact-container h1 {
+  white-space: normal;
+}
+
+@media (max-width: 900px) {
+  .contact-container h1 {
+    font-size: 3rem;
+    padding-left: 0;
+  }
+}
+
+.contact-container h2 {
+  display: none;
+}
+
+.contact-container h3 {
+  display: none;
+}
+
+.contact-container-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact-container-buttons img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=contact.css.map */

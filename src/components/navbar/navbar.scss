@@ -1,13 +1,16 @@
 @import "../global/_global.scss";
 
 .navbar {
-  @include default-flex($justify: space-between, $direction: row);
-
   z-index: 2;
   position: fixed;
   width: 100%;
   padding: $size-one-half $size-one;
   height: $size-four;
+
+  @include default-flex($justify: space-between, $direction: row);
+  @include breakpoint-small {
+    background-color: $background-black;
+  };
 
   * {
     color: $text-white;

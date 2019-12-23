@@ -1,10 +1,18 @@
-@import "../components/global/_global.scss";
+@import "../components/global/_global";
 
 .page-title {
   color: $text-white;
-  font-size: $size-three;
-  padding: $size-five $size-two;
-  font-weight: 400;
+  font-size: $size-four;
+  padding: $size-two 0;
+  font-weight: 800;
   white-space: nowrap;
+  max-width: 34.5rem;
+
+  @include breakpoint-small {
+    width: auto;
+    text-align: left;
+    width: 100%;
+    font-size: $size-three;
+  }
 }
 

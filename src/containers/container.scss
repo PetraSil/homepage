@@ -1,15 +1,10 @@
-@import "../components/global/_global.scss";
+@import "../components/global/_global";
 
 .container {
   min-height: 100vh;
   position: relative;
   padding: $size-four 0;
   background-color: $background-black;
-
-  @include breakpoint-small {
-    width: 70%;
-    margin: auto;
-  }
 
   &-flex {
     @include default-flex;
