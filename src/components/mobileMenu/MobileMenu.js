@@ -11,7 +11,7 @@ const MobileMenu = ({ open, setMobile }) =>
       <NavLink exact to="/contact" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3 aria-label="Navigation link">Contact</h3>
       </NavLink>
-      <NavLink exact to="/" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
+      <NavLink exact to="/home" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3 aria-label="Navigation link">Home</h3>
       </NavLink>    
     </nav>

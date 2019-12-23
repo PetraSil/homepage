@@ -29,9 +29,10 @@ const App = () => {
           <AbsoluteWrapper content={
             <animated.div key={key} style={props}>
               <Switch location={item}>
-                <Route path="/" exact component={Home} />
+                <Route path="/home" component={Home} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
+                <Route path="*" component={Home} />
               </Switch>
             </animated.div>
           } />
