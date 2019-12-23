@@ -3,7 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import Work from './pages/work/Work';
 import Contact from './pages/contact/Contact';
-import { BrowserRouter as Router, withRouter, Switch, Route, __RouterContext } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, withRouter, Switch, Route, __RouterContext } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 import AbsoluteWrapper from './containers/AbsoluteWrapper';
 import MobileMenu from './components/mobileMenu/MobileMenu';
@@ -32,7 +32,7 @@ const App = () => {
                 <Route path="/home" component={Home} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
-                <Route path="*" component={Home} />
+                <Redirect path="/" exact to ="/home" component={Home} />
               </Switch>
             </animated.div>
           } />
