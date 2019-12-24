@@ -5,6 +5,13 @@
   background-color: #141414;
 }
 
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .container__flex {
   display: -webkit-box;
   display: -ms-flexbox;

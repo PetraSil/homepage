@@ -1,12 +1,6 @@
 @import "../global/_global.scss";
 
 .intro__wrapper {
-
-  @include breakpoint-small {
-    width: 80%;
-    padding-top: $size-three;
-  }
-
   h1 {
     color: $pure-white;
     font-size: $size-five;

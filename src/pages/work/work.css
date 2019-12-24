@@ -18,10 +18,4 @@
 .work__container {
   padding-top: 3rem;
 }
-
-@media (max-width: 900px) {
-  .work__container {
-    width: 80%;
-  }
-}
 /*# sourceMappingURL=work.css.map */

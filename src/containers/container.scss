@@ -6,6 +6,11 @@
   padding: $size-four 0;
   background-color: $background-black;
 
+  @include breakpoint-small {
+    width: 80%;
+    margin: auto;
+  }
+
   &__flex {
     @include default-flex;
   }

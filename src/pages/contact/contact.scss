@@ -1,11 +1,6 @@
 @import "../../components/global/global";
 
 .contact-container {
-
-  @include breakpoint-small {
-    width: 80%;
-  }
-
   h1 {
     white-space: normal;
 
@@ -24,13 +19,18 @@
   }
 
   &-buttons {
-    @include default-flex($justify: space-between, $align: flex-end, $direction: row);
+    @include default-flex($justify: space-between, $align: flex-start, $direction: row);
 
     img {
-      height: $size-one-plus-half;
-      width: $size-one-plus-half;
-      margin-left: $size-one;
+      height: $size-two;
+      width: $size-two;
+      margin-right: $size-one-plus-half;
       cursor: pointer;
+      @include default-transition;
+
+      &:hover, &:active, &:focus {
+        box-shadow: 0px 0px 169px 20px rgba(25, 190, 219, 0.7);
+      }
     }
   }
 }

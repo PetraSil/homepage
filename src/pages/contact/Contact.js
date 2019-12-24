@@ -31,9 +31,6 @@ const Contact = () => {
           textSecond={"So drop me a message on Linkedin if you have something interesting in mind!"}         
         />
         <div className="contact-container-buttons">
-          <a onClick={Links}>
-            <Button text={"Contact me"} name="linkedin" aria-label="Button link" />
-          </a>
           <span>
             <img src={git} name="git" alt="Icon link to github" aria-label="Icon of Githug" onClick={Links}></img>
             <img src={linkedin} name="linkedin" alt="Icon link to Linkedin" aria-label="Icon of Linkedin" onClick={Links}></img>
