@@ -13,6 +13,7 @@
     font-weight: 800;
     margin-bottom: $size-one;
     position: relative;
+    padding-bottom: $size-one;
 
     @include breakpoint-small {
       font-size: $size-three;
