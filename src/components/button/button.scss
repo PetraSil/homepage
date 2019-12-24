@@ -11,7 +11,7 @@
 
 	@include default-transition($time: 0.4s);
 
-	&:hover {
+	&:hover, &:active, &:focus {
 		background-color: $theme-cyan;
 		color: $background-black;
     box-shadow: 0px 0px 169px 20px rgba(25, 190, 219, 0.7);
