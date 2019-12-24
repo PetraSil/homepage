@@ -46,7 +46,7 @@
           @include default-transition;
         }
 
-        &:hover {
+        &:hover, &:active, &:focus {
           color: $hover-white;
 
           &::after {

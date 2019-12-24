@@ -33,7 +33,7 @@
   transition: 0.15s all ease-in-out;
 }
 
-.mobile__menu h3:hover {
+.mobile__menu h3:hover, .mobile__menu h3:active, .mobile__menu h3:focus {
   color: rgba(250, 250, 250, 0.5);
 }
 /*# sourceMappingURL=mobileMenu.css.map */
