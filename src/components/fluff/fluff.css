@@ -8,6 +8,7 @@
   z-index: 1;
   width: 100%;
   text-align: center;
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
