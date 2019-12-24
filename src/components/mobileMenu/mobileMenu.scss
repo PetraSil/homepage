@@ -2,7 +2,6 @@
 
 .mobile__menu {
   position: fixed;
-  opacity: 0;
   width: 0;
   height: 100vh;
   background-color: $background-black;
@@ -11,6 +10,11 @@
 
   @include default-transition($time: 0.3s);
   @include default-flex;
+  @include breakpoint-small {
+    display: flex;
+  };
+  
+  display: none;
 
   h3 {
     color: $text-white;

@@ -1,6 +1,5 @@
 .mobile__menu {
   position: fixed;
-  opacity: 0;
   width: 0;
   height: 100vh;
   background-color: #141414;
@@ -21,6 +20,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobile__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .mobile__menu h3 {
