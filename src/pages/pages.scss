@@ -2,11 +2,11 @@
 
 .page__title {
   color: $text-white;
-  font-size: $size-four;
+  font-size: $size-five;
   padding: $size-three 0;
   font-weight: 800;
-  white-space: nowrap;
   max-width: 34.5rem;
+  line-height: 1;
 
   @include breakpoint-small {
     width: auto;

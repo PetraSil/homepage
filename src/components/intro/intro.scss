@@ -9,11 +9,13 @@
 
   h1 {
     color: $pure-white;
-    font-size: $size-four;
+    font-size: $size-five;
     font-weight: 800;
     margin-bottom: $size-one;
     position: relative;
     padding-bottom: $size-one;
+    line-height: 1;
+    max-width: 34.5rem;
 
     @include breakpoint-small {
       font-size: $size-three;
