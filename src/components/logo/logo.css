@@ -12,9 +12,8 @@
   position: absolute;
   content: "";
   left: -50%;
-  top: 50%;
+  bottom: -30%;
   border-bottom: 0.1rem solid #07acdb;
   width: 11rem;
-  height: 1rem;
 }
 /*# sourceMappingURL=logo.css.map */
