@@ -1,6 +1,7 @@
 @media (max-width: 900px) {
   .intro-container {
     width: 80%;
+    padding-top: 3rem;
   }
 }
 

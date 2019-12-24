@@ -4,6 +4,7 @@
 
   @include breakpoint-small {
     width: 80%;
+    padding-top: $size-three;
   }
 
   h1 {
