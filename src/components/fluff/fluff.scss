@@ -2,34 +2,22 @@
 
 .fluff__wrapper {
   text-transform: uppercase;
-  transform: rotate(-90deg);
   position: fixed;
   left: 0;
-  top: 75vh;
-  width: 4rem;
-  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+  text-align: center;
   
   @include default-flex($justify: flex-end, $align: flex-end);
-  @include breakpoint-small {
-    display: none;
-  }
 
   span {
     position: relative;
-    font-weight: 200;
-    color: white;
-    font-size: 2rem;
-    padding-left: $size-six;
-    padding-bottom: $size-one-third;
-    border-bottom: 0.2rem solid $theme-cyan;
-
-    &::after {
-      position: absolute;
-      top: 1rem;
-      left: 10%;
-      content: "";
-      width: 8rem;
-      box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
-    }
+    font-weight: 400;
+    color: $theme-cyan;
+    opacity: 0.05;
+    font-size: 22rem;
+    width: 100%;
   }
 }
