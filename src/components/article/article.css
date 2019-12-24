@@ -1,17 +1,17 @@
-article {
+.article {
   padding-bottom: 2rem;
   color: #e0e0f4;
   position: relative;
 }
 
-article h2 {
+.article h2 {
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.1rem;
   padding-bottom: 0.3rem;
 }
 
-article h3 {
+.article h3 {
   font-size: 1rem;
   font-weight: 400;
   padding-bottom: 0.5rem;
@@ -19,7 +19,7 @@ article h3 {
   color: #c8c8c8;
 }
 
-article p {
+.article p {
   font-size: 0.9rem;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;

@@ -1,70 +1,99 @@
 @import "../global/_global.scss";
 
 .navbar {
-  z-index: 2;
-  position: fixed;
-  width: 100%;
-  padding: $size-one-half $size-one;
-  height: $size-four;
 
-  @include default-flex($justify: space-between, $direction: row);
-  @include breakpoint-small {
-    background-color: $background-black;
-  };
+  &__wrapper {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    padding: $size-one-half $size-one;
+    height: $size-four;
 
-  * {
-    color: $text-white;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include default-flex($justify: space-between, $direction: row);
+    @include breakpoint-small {
+      background-color: $background-black;
+    };
+
+    * {
+      color: $text-white;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &_right {
+      width: 50%;
+
+      @include default-flex($justify: flex-end, $direction: row);
+
+      span {
+        margin: $size-one-half $size-two;
+        position: relative;
+        cursor: pointer;
+        font-size: $size-one-four-fifths;
+        letter-spacing: $size-one-tenth;;
+    
+        @include default-flex;
+        @include default-transition;
+        
+        &::after {
+          position: absolute;
+          left: 0%;
+          bottom: -$size-one-half;
+          content: "";
+          width: 0%;
+          border-top: $size-one-tenth solid $theme-cyan;
+
+          @include default-transition;
+        }
+
+        &:hover {
+          color: $hover-white;
+
+          &::after {
+            width: 100%;
+          }
+        };
+      }
+    }
+
+    &_left {
+      margin-left: $size-one;
+
+      @include default-flex($direction: row);
+    }
   }
 
-  &-right {
-    width: 50%;
+  &__small {
+    display: none;
+    margin-top: $size-one;
+    cursor: pointer;
 
-    @include default-flex($justify: flex-end, $direction: row);
+    @include breakpoint-small {
+      display: block;
+    }
 
-    span {
-      margin: $size-one-half $size-two;
-      position: relative;
-      cursor: pointer;
-      font-size: 0.8rem;
-      letter-spacing: 0.1rem;
-  
-      @include default-flex;
+    &_line_first, &_line_second, &_line_third {
+      height: $size-one-tenth;
+      background-color: $pure-white;
+      margin-bottom: $size-one-half;
+      width: $size-two;
+      margin-left: auto;
+    
       @include default-transition;
-      
-      &::after {
-        position: absolute;
-        left: 0%;
-        bottom: -$size-one-half;
-        content: "";
-        width: 0%;
-        border-top: $size-one-tenth solid $theme-cyan;
+    }
 
-        @include default-transition;
-      }
-
-      &:hover {
-        color: $hover-white;
-
-        &::after {
-          width: 100%;
-        }
-      };
+    &_line_second {
+      height: $size-one-fifth;
+      background-color: $theme-cyan;
     }
     
-    .nav-items-large {
-      @include default-flex($justify: flex-end, $direction: row);
+    &_line_third {
+      width: $size-one;
     }
   }
-
-  &-left {
-    margin-left: $size-one;
-
-    @include default-flex($direction: row);
-  }
-
-  .nav-items-large {
+  
+  &__items_large {
+    @include default-flex($justify: flex-end, $direction: row);
     @include breakpoint-small {
       display: none;
     };
@@ -83,36 +112,6 @@
     border-top: $size-one-fifth solid $theme-cyan;
     box-shadow: 0px 0px 169px 30px rgba(25, 190, 219, 0.7);
 
-
     @include default-transition;
   }
-}
-
-.nav-items-small {
-  display: none;
-  margin-top: $size-one;
-  cursor: pointer;
-
-  @include breakpoint-small {
-    display: block;
-  }
-}
-
-#nav-line-first, #nav-line-second, #nav-line-third {
-  height: $size-one-tenth;
-  background-color: $pure-white;
-  margin-bottom: $size-one-half;
-  width: $size-two;
-  margin-left: auto;
-
-  @include default-transition;
-}
-
-#nav-line-second {
-  height: $size-one-fifth;
-  background-color: $theme-cyan;
-}
-
-#nav-line-third {
-  width: $size-one;
 }

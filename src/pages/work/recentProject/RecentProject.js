@@ -1,10 +1,10 @@
 import React from 'react';
 
 const RecentProject = () =>
-  <section className="work-recent-project">
+  <section className="project__container">
 		<h2>PROJECT ONE</h2>
 		<p></p>
-		<div className="project-image"></div>
+		<div className="project__image"></div>
   </section>
 ;
 

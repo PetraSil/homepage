@@ -9,17 +9,6 @@
 
   @include default-transition;
 
-  &-icons {
-    margin: 0 $size-one;
-
-    img {
-      height: $size-one-plus-half;
-      width: $size-one-plus-half;
-      cursor: pointer;
-      margin: 0 $size-one-half;
-    }
-  }
-
   &::after {
     position: absolute;
     content: "";

@@ -3,7 +3,7 @@ import './intro.css';
 import Button from '../button/Button';
 
 const Intro = () =>
-    <div className="intro-container">
+    <div className="intro__wrapper">
       <h1>You could call me a...</h1>
       <h2>Software Developer<br/>
         Web Enthusiast<br/>

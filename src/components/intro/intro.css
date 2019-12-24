@@ -1,11 +1,11 @@
 @media (max-width: 900px) {
-  .intro-container {
+  .intro__wrapper {
     width: 80%;
     padding-top: 3rem;
   }
 }
 
-.intro-container h1 {
+.intro__wrapper h1 {
   color: white;
   font-size: 4rem;
   font-weight: 800;
@@ -14,24 +14,24 @@
 }
 
 @media (max-width: 900px) {
-  .intro-container h1 {
+  .intro__wrapper h1 {
     font-size: 3rem;
   }
 }
 
-.intro-container h2 {
+.intro__wrapper h2 {
   color: #c8c8c8;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
 @media (max-width: 900px) {
-  .intro-container h2 {
+  .intro__wrapper h2 {
     font-size: 1.4rem;
   }
 }
 
-.intro-container p {
+.intro__wrapper p {
   color: #c8c8c8;
   font-size: 1rem;
   font-weight: 300;
@@ -39,12 +39,12 @@
 }
 
 @media (max-width: 900px) {
-  .intro-container p {
+  .intro__wrapper p {
     font-size: 1rem;
   }
 }
 
-.intro-container .button {
+.intro__wrapper .button {
   margin-top: 2rem;
 }
 /*# sourceMappingURL=intro.css.map */

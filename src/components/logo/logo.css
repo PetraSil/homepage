@@ -8,17 +8,6 @@
   transition: 0.15s all ease-in-out;
 }
 
-.logo-icons {
-  margin: 0 1rem;
-}
-
-.logo-icons img {
-  height: 1.5rem;
-  width: 1.5rem;
-  cursor: pointer;
-  margin: 0 0.5rem;
-}
-
 .logo::after {
   position: absolute;
   content: "";

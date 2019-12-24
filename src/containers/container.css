@@ -5,7 +5,7 @@
   background-color: #141414;
 }
 
-.container-flex {
+.container__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@
           flex-direction: column;
 }
 
-.container-grid {
+.container__grid {
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -31,7 +31,7 @@
       grid-template-columns: 1fr 1fr;
 }
 
-.absolute-wrapper {
+.absolute__wrapper {
   position: absolute;
   width: 100%;
   overflow-y: hidden;

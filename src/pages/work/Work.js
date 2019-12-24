@@ -10,8 +10,8 @@ const Work = () => {
   return (
     <DefaultContainerFlex 
     content={
-      <div className="work-container">
-        <h1 className="page-title">Timeline</h1>
+      <div className="work__container">
+        <h1 className="page__title">Timeline</h1>
         <Article title={"ALTEN FINLAND"} metatitle={"10 / 2019 - Present"} 
           text={"Work at Alten Finland is full-stack consultant work as a software developer in a new software development unit. This has included working with Node.js, React, SASS, Docker, MongoDB, API's, UX and UI designing to name a few. Work at Alten Finland has also included periods of being the SCRUM master during agile sprints."}
           textSecond={"An example project is a time and resource management product that has included API designing, back and front building, UX and UI designing and testing."}

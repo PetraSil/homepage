@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AbsoluteWrapper = ({ content }) =>
-  <div className="absolute-wrapper">
+  <div className="absolute__wrapper">
     {content}
   </div>
 ;

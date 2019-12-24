@@ -17,7 +17,7 @@
           box-shadow: 6px 6px 6px black;
 }
 
-.button-default {
+.button__default {
   background-color: transparent;
   color: #fafafa;
 }

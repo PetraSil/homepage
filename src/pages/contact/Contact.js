@@ -25,7 +25,7 @@ const Contact = () => {
     <DefaultContainerFlex 
     content={
       <section className="contact-container">
-        <h1 className="page-title">What's on your mind?</h1>
+        <h1 className="page__title">What's on your mind?</h1>
         <Article
           text={"While I may be busy as a bee in my current job, I am always interested in hearing about new and interesting opportunities or projects where I could possibly challenge, fulfill and advance myself as a developer as well as a designer."}
           textSecond={"So drop me a message on Linkedin if you have something interesting in mind!"}         

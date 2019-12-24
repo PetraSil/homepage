@@ -15,12 +15,12 @@
   max-width: 30rem;
 }
 
-.work-container {
+.work__container {
   padding-top: 3rem;
 }
 
 @media (max-width: 900px) {
-  .work-container {
+  .work__container {
     width: 80%;
   }
 }

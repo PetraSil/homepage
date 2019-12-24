@@ -6,16 +6,16 @@
   padding: $size-four 0;
   background-color: $background-black;
 
-  &-flex {
+  &__flex {
     @include default-flex;
   }
 
-  &-grid {
+  &__grid {
     @include default-grid;
   }
 }
 
-.absolute-wrapper {
+.absolute__wrapper {
   position: absolute;
   width: 100%;
   overflow-y: hidden;

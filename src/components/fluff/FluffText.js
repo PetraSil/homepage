@@ -4,7 +4,7 @@ import './fluff.css';
 const FluffText = ({ text }) => {
 
   return (
-    <div className="fluff-text">    
+    <div className="fluff__wrapper">    
       <span>{text}</span>
     </div>
   )
