@@ -17,7 +17,7 @@ return (
         <NavLink exact to="/contact" activeClassName="active">
           <span aria-label="Navigation link">Contact</span>
         </NavLink>
-        <NavLink exact to="/" activeClassName="active">
+        <NavLink exact to="/home" activeClassName="active">
           <span aria-label="Navigation link">Home</span>
       </NavLink>
       </div>

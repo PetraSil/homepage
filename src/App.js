@@ -31,7 +31,7 @@ const App = () => {
           <AbsoluteWrapper content={
             <animated.div key={key} style={props} >
               <Switch location={item}>
-                <Route path="/" exact component={Home} />
+                <Route path="/home" exact component={Home} />
                 <Route path="/work" exact component={Work} />
                 <Route path="/contact" exact component={Contact} />
                 <Redirect path="/" exact to="/home" component={Home} />
