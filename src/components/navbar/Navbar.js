@@ -3,20 +3,21 @@ import './navbar.css';
 import Logo from '../logo/Logo';
 import { NavLink } from 'react-router-dom'
 
-const Navbar = ({ open, setMobile }) => 
+const Navbar = ({ open, setMobile }) => {
+return (
   <nav className="navbar__wrapper">
     <nav className="navbar__wrapper_left">
       <Logo open={open}/>
     </nav>
     <nav className="navbar__wrapper_right">
       <div className="navbar__items_large">
-        <NavLink to="/work" activeClassName="active">
+        <NavLink exact to="/work" activeClassName="active" >
           <span aria-label="Navigation link">Work</span>
         </NavLink>
-        <NavLink to="/contact" activeClassName="active">
+        <NavLink exact to="/contact" activeClassName="active">
           <span aria-label="Navigation link">Contact</span>
         </NavLink>
-        <NavLink to="/" activeClassName="active">
+        <NavLink exact to="/" activeClassName="active">
           <span aria-label="Navigation link">Home</span>
       </NavLink>
       </div>
@@ -27,6 +28,6 @@ const Navbar = ({ open, setMobile }) =>
       </div>
     </nav>
   </nav>
-;   
+)};   
 
 export default Navbar;
