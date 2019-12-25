@@ -6,7 +6,7 @@ const Logo = ({ open }) =>
   <>
      <Link to="/">
       <span className="logo" aria-label="Logo as a link" style={{ display: open ? "none" : "block" }}>
-        PETRA SILAVUORI
+        <span className="logo__cyan">PETRA</span> Silavuori
       </span>
     </Link>
   </>

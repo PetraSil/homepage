@@ -1,19 +1,16 @@
 .logo {
   cursor: pointer;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.25rem;
   white-space: nowrap;
   position: relative;
+  text-transform: capitalize;
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
 }
 
-.logo::after {
-  position: absolute;
-  content: "";
-  left: -50%;
-  bottom: -30%;
-  border-bottom: 0.1rem solid #07acdb;
-  width: 11rem;
+.logo__cyan {
+  color: #07acdb;
+  font-weight: 200;
 }
 /*# sourceMappingURL=logo.css.map */

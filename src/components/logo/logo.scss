@@ -3,18 +3,15 @@
 .logo {
   cursor: pointer;
   font-weight: 400;
-  font-size: $size-one;
+  font-size: $size-one-plus-fourth;
   white-space: nowrap;
   position: relative;
+  text-transform: capitalize;
 
   @include default-transition;
 
-  &::after {
-    position: absolute;
-    content: "";
-    left: -50%;
-    bottom: -30%;
-    border-bottom: $size-one-tenth solid $theme-cyan;
-    width: 11rem;
+  &__cyan {
+    color: $theme-cyan;
+    font-weight: 200;
   }
 }
