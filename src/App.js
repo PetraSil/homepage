@@ -20,6 +20,8 @@ const App = () => {
     leave: { opacity: 0 }
   });
 
+  console.log(location.pathname)
+
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
