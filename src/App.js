@@ -25,16 +25,16 @@ const App = () => {
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
         <FluffText 
-          text={ location.pathname.replace(/\//g,'') === 'home/' ? 'HOME' : location.pathname.replace(/\//g,'')}
+          text={ location.pathname.replace(/\//g,'') === '' ? 'HOME' : location.pathname.replace(/\//g,'')}
         />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
             <animated.div key={key} style={props} >
               <Switch location={item}>
-                <Route path="/home" exact component={Home} />
+                <Route path="/" exact component={Home} />
                 <Route path="/work" exact component={Work} />
                 <Route path="/contact" exact component={Contact} />
-                <Redirect path="/" exact to="/home" component={Home} />
+                <Redirect path="/" exact to="/" component={Home} />
               </Switch>
             </animated.div>
           } />
