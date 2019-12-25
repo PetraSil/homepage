@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState } from 'react';
+import React from 'react';
 import './fluff.css';
 
 const FluffText = ({ text }) => {

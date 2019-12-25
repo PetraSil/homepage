@@ -1,6 +1,5 @@
 import React from 'react'
 import './intro.css';
-import Button from '../button/Button';
 
 const Intro = () =>
     <div className="intro__wrapper">

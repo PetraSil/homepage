@@ -1,9 +1,9 @@
-import React, {  useEffect, useContext, createContext, useState, useRef } from 'react';
+import React, {  useContext,  useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import Work from './pages/work/Work';
 import Contact from './pages/contact/Contact';
-import { BrowserRouter as Router, Redirect, withRouter, Switch, Route, __RouterContext } from 'react-router-dom';
+import { Redirect, withRouter, Switch, Route, __RouterContext } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 import AbsoluteWrapper from './containers/AbsoluteWrapper';
 import MobileMenu from './components/mobileMenu/MobileMenu';
@@ -19,22 +19,24 @@ const App = () => {
     enter: { opacity: 1},
     leave: { opacity: 0 }
   });
-  
+
+  console.log(location.pathname)
+
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
         <FluffText 
-          text={ location.pathname.replace(/\//g,'') == 'home/' ? 'HOME' : location.pathname.replace(/\//g,'')}
+          text={ location.pathname.replace(/\//g,'') === 'home/' ? 'HOME' : location.pathname.replace(/\//g,'')}
         />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
-            <animated.div key={key} style={props}>
+            <animated.div key={key} style={props} >
               <Switch location={item}>
                 <Route path="/home" component={Home} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
-                <Redirect path="/" exact to ="/home" component={Home} />
+                <Redirect path="/" to="/home" component={Home} />
               </Switch>
             </animated.div>
           } />

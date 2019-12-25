@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Logo = ({ open }) =>
   <>
-     <Link exact to="/">
+     <Link to="/">
       <span className="logo" aria-label="Logo as a link" style={{ display: open ? "none" : "block" }}>
         PETRA SILAVUORI
       </span>

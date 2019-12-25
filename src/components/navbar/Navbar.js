@@ -10,13 +10,13 @@ const Navbar = ({ open, setMobile }) =>
     </nav>
     <nav className="navbar__wrapper_right">
       <div className="navbar__items_large">
-        <NavLink exact to="/work" activeClassName="active">
+        <NavLink to="/work" activeClassName="active">
           <span aria-label="Navigation link">Work</span>
         </NavLink>
-        <NavLink exact to="/contact" activeClassName="active">
+        <NavLink to="/contact" activeClassName="active">
           <span aria-label="Navigation link">Contact</span>
         </NavLink>
-        <NavLink exact to="/home" activeClassName="active">
+        <NavLink to="/home" activeClassName="active">
           <span aria-label="Navigation link">Home</span>
       </NavLink>
       </div>

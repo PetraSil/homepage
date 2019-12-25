@@ -3,14 +3,12 @@ import DefaultContainerFlex from '../../containers/DefaultContainerFlex';
 import '../pages.css';
 import './contact.css';
 import Article from '../../components/article/Article';
-import Button from '../../components/button/Button';
 import linkedin from './linkedin.png';
 import git from './github.png';
 
 const Contact = () => {
-
   const Links = (e) => {
-    if(e.target.name == "git") {
+    if(e.target.name === "git") {
       window.open(
         'https://github.com/PetraSil','_blank'
       );
