@@ -20,21 +20,23 @@ const App = () => {
     leave: { opacity: 0 }
   });
 
+  console.log(location.pathname)
+  console.log(location.pathname.replace(/\//g,''))
+
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
         <MobileMenu open={mobileOpen} setMobile={setMobileOpen}/>
         <FluffText 
-          text={ location.pathname.replace(/\//g,'') === 'home/' ? 'HOME' : location.pathname.replace(/\//g,'')}
+          text={ location.pathname.replace(/\//g,'') === '' ? 'HOME' : location.pathname.replace(/\//g,'')}
         />
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
             <animated.div key={key} style={props} >
               <Switch location={item}>
-                <Route path="/home" component={Home} />
+                <Route path="/" component={Home} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
-                <Redirect path="/" to="/home" component={Home} />
               </Switch>
             </animated.div>
           } />

@@ -16,7 +16,7 @@ const Navbar = ({ open, setMobile }) =>
         <NavLink to="/contact" activeClassName="active">
           <span aria-label="Navigation link">Contact</span>
         </NavLink>
-        <NavLink to="/home" activeClassName="active">
+        <NavLink to="/" activeClassName="active">
           <span aria-label="Navigation link">Home</span>
       </NavLink>
       </div>
