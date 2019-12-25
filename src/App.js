@@ -4,7 +4,7 @@ import Home from './pages/home/Home';
 import Work from './pages/work/Work';
 import Contact from './pages/contact/Contact';
 import { Redirect, withRouter, Switch, Route, __RouterContext } from 'react-router-dom';
-import { useTransition, animated } from 'react-spring';
+import { config, useTransition, animated } from 'react-spring';
 import AbsoluteWrapper from './containers/AbsoluteWrapper';
 import MobileMenu from './components/mobileMenu/MobileMenu';
 import FluffText from './components/fluff/FluffText';
@@ -14,10 +14,10 @@ const App = () => {
 
   const { location } = useContext(__RouterContext);
   const pageTransitions = useTransition(location, location => location.pathname, {
-    config: { duration: 800 },
-    from: { opacity: 0 },
-    enter: { opacity: 1},
-    leave: { opacity: 0 }
+    from: { opacity: 0, transform: "translate(100%, 0)" },
+    enter: { opacity: 1, transform: "translate(0, 0)" },
+    leave: { opacity: 0, transform: "translate(-50%, 0)" },
+    config: config.slow
   });
 
   return (
