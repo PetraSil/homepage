@@ -20,8 +20,6 @@ const App = () => {
     leave: { opacity: 0 }
   });
 
-  console.log(location.pathname)
-
   return (
       <>
         <Navbar open={mobileOpen} setMobile={setMobileOpen}/>
@@ -36,7 +34,7 @@ const App = () => {
                 <Route path="/home" component={Home} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
-                <Redirect path="/" to="/home" component={Home} />
+                <Redirect path={location.pathname.replace(/\//g,'') === null || location.pathname.replace(/\//g,'') === undefined || location.pathname.replace(/\//g,'') === '' ? '' : '' }  to="/home" component={Home} />
               </Switch>
             </animated.div>
           } />
