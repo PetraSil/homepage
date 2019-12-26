@@ -11,6 +11,9 @@ return (
     </nav>
     <nav className="navbar__wrapper_right">
       <div className="navbar__items_large">
+        {/*<NavLink exact to="/project" activeClassName="active" >
+          <span aria-label="Navigation link">Project</span>
+        </NavLink>*/}
         <NavLink exact to="/work" activeClassName="active" >
           <span aria-label="Navigation link">Work</span>
         </NavLink>

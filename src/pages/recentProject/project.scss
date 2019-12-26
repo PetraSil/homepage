@@ -1,0 +1,91 @@
+@import "../../components/global/global";
+
+.project {
+  &__container {
+    padding: $size-three 0;
+    width: 75%;
+    z-index: 1;
+
+    @include breakpoint-small {
+      width: 100%;
+      margin: auto;
+    }
+
+    .page__title {
+      max-width: none;
+    }
+
+    h2 {
+      font-size: $size-one-plus-half;
+      font-weight: 600;
+    }
+
+    h2, h3 {
+      color: $text-white;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+
+    p {
+      font-size: $size-one;
+      font-weight: 200;
+      max-width: 20rem;
+      color: $text-gray;
+      margin: 0 $size-five $size-three 0;
+
+      @include breakpoint-medium {
+        max-width: 100%;
+        margin: 0 0 $size-three 0;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: $size-two;
+    flex-wrap: wrap;
+
+    @include default-flex($justify: space-between, $align: flex-start, $direction: row);
+    
+    &_image {
+      background-image: url(testbg.jpg);
+      background-size: cover;
+      height: 25rem;
+      width: 100%;
+      max-width: 35rem;
+      position: relative;
+      cursor: pointer;
+      outline: 1px solid transparent;
+      
+      @include default-transition;
+
+      @include breakpoint-medium {
+        max-width: 100%;
+      }
+
+      &:hover {
+        outline: 1px solid white;
+        outline-offset: -$size-one;
+      }
+
+      &::before {
+        background-image: url(phone.PNG);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+        height: 25rem;
+        width: 17rem;
+        position: absolute;
+        bottom: -15%;
+        left: -15%;
+
+        @include breakpoint-medium {
+          max-width: 100%;
+          left: 0%;
+          bottom: -10%;
+        }
+      }
+    }
+  }
+}

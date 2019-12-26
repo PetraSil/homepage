@@ -14,6 +14,12 @@ $hover-white: rgba(250, 250, 250, 0.5);
 	}
 }
 
+@mixin breakpoint-medium() {
+	@media (max-width: 1280px) {
+		@content;
+	}
+}
+
 //GENERAL SIZES
 $size-one-tenth: 0.1rem;
 $size-one-fifth: 0.2rem;

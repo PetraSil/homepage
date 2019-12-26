@@ -8,6 +8,7 @@ import { config, useTransition, animated } from 'react-spring';
 import AbsoluteWrapper from './containers/AbsoluteWrapper';
 import MobileMenu from './components/mobileMenu/MobileMenu';
 import FluffText from './components/fluff/FluffText';
+import Project from './pages/recentProject/RecentProject';
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/work" exact component={Work} />
                 <Route path="/contact" exact component={Contact} />
+                {/*<Route path="/project" exact component={Project} />*/}
                 <Redirect path="/home" exact to="/" component={Home} />
               </Switch>
             </animated.div>
