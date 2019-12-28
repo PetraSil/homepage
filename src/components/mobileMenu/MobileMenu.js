@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 const MobileMenu = ({ open, setMobile }) =>
     <nav className="mobile__menu" 
       style={{width: open ? "100%" : "0", opacity: open ? "1" : "0"}}>
-      {/*<NavLink exact to="/project" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
+      <NavLink exact to="/project" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3 aria-label="Navigation link">Project</h3>
-      </NavLink>*/}
+      </NavLink>
       <NavLink exact to="/work" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3 aria-label="Navigation link">Work</h3>
       </NavLink>

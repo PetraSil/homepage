@@ -18,10 +18,13 @@
 .project__container h2 {
   font-size: 1.5rem;
   font-weight: 600;
+  max-width: 20rem;
+  padding-bottom: 1rem;
 }
 
 .project__container h2, .project__container h3 {
   color: #e0e0f4;
+  color: #c8c8c8;
 }
 
 .project__container h3 {
@@ -63,7 +66,7 @@
 }
 
 .project__content_image {
-  background-image: url(testbg.jpg);
+  background-image: url(myraL.PNG);
   background-size: cover;
   height: 25rem;
   width: 100%;
@@ -87,7 +90,7 @@
 }
 
 .project__content_image::before {
-  background-image: url(phone.PNG);
+  background-image: url(myraS.PNG);
   background-size: contain;
   background-repeat: no-repeat;
   content: '';
@@ -104,5 +107,19 @@
     left: 0%;
     bottom: -10%;
   }
+}
+
+.project__content_link {
+  text-decoration: none;
+  font-weight: 800;
+  display: block;
+  color: #e0e0f4;
+  padding-bottom: 0.5rem;
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
+}
+
+.project__content_link:hover {
+  color: #c8c8c8;
 }
 /*# sourceMappingURL=project.css.map */

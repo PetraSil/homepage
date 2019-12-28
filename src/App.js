@@ -35,7 +35,7 @@ const App = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/work" exact component={Work} />
                 <Route path="/contact" exact component={Contact} />
-                {/*<Route path="/project" exact component={Project} />*/}
+                <Route path="/project" exact component={Project} />
                 <Redirect path="/home" exact to="/" component={Home} />
               </Switch>
             </animated.div>
