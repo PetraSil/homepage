@@ -12,6 +12,7 @@
   @include default-flex;
   @include breakpoint-small {
     display: flex;
+    padding: $size-four 0;
   };
   
   display: none;
