@@ -1,4 +1,4 @@
-import React, {  useContext,  useState } from 'react';
+import React, {  useContext,  useState, Suspense, lazy } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import Work from './pages/work/Work';
@@ -8,7 +8,7 @@ import { config, useTransition, animated } from 'react-spring';
 import AbsoluteWrapper from './containers/AbsoluteWrapper';
 import MobileMenu from './components/mobileMenu/MobileMenu';
 import FluffText from './components/fluff/FluffText';
-import Project from './pages/recentProject/RecentProject';
+const Project = lazy(() => import('./pages/recentProject/RecentProject'));
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -31,13 +31,15 @@ const App = () => {
         {pageTransitions.map(({item, props, key}) => (
           <AbsoluteWrapper content={
             <animated.div key={key} style={props} >
-              <Switch location={item}>
-                <Route path="/" exact component={Home} />
-                <Route path="/work" exact component={Work} />
-                <Route path="/contact" exact component={Contact} />
-                <Route path="/project" exact component={Project} />
-                <Redirect path="/home" exact to="/" component={Home} />
-              </Switch>
+              <Suspense fallback={<div>Page loading...</div>}>
+                <Switch location={item}>
+                  <Route path="/" exact component={Home} />
+                  <Route path="/work" exact component={Work} />
+                  <Route path="/contact" exact component={Contact} />
+                  <Route path="/project" exact component={Project} />
+                  <Redirect path="/home" exact to="/" component={Home} />
+                </Switch>
+              </Suspense>
             </animated.div>
           } />
         ))}
