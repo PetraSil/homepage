@@ -20,7 +20,7 @@ const Work = () => {
         <Article title={"FREELANCE WEB DEVELOPER"} metatitle={"09 / 2018 - 05 / 2019"} text={"During my time as a freelance web developer I designed and built websites for small customers. Technologies used were Javascript, CSS, PHP and HTML."}
           textSecond={"Some example projects were a portfoliot site for a tattoo artist and a technology start-up homepage."}
         />
-        <Article title={"ENGINEERING STUDIES"} metatitle={"08 / 2017 - Present"} text={"My information technology engineering studies are nearly finished in the Metropolia University of Applied Sciences and I am in the middle of writing my bachelor's thesis. I have specialized in health and well-being technology due to my nursing background."}/>
+        <Article title={"ENGINEERING STUDIES"} metatitle={"08 / 2017 - 05 / 2020"} text={"My information technology engineering studies are nearly finished in the Metropolia University of Applied Sciences and I am in the middle of writing my bachelor's thesis. I have specialized in health and well-being technology due to my nursing background."}/>
       </div>
     }
     />

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './container.css';
 
 const AbsoluteWrapper = ({ content }) =>
   <div className="absolute__wrapper">
