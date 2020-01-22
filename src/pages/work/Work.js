@@ -11,7 +11,7 @@ const Work = () => {
       <div className="work__container">
         <h1 className="page__title">My professional history</h1>
         <Article title={"ALTEN FINLAND"} metatitle={"10 / 2019 - Present"} 
-          text={"Work at Alten Finland is full-stack consultant work in a new software development unit. This has included working with Node.js, React, SASS, Docker, MongoDB, API's, UX and UI designing to name a few. Work at Alten Finland has also included periods of being the SCRUM master during agile sprints."}
+          text={"Work at Alten Finland is full-stack consultant work in a new software development unit. This has included working with Node.js, React, SASS, Docker, MongoDB, API's, UX and UI designing to name a few. Work at Alten Finland has also included being a team lead and periods of being the SCRUM master during agile sprints."}
           textSecond={"An example project is a time and resource management product that has included API designing, back and front building, UX and UI designing and testing."}
         />
         <Article title={"EXOVE"} metatitle={"05 / 2019 - 10 / 2019"} text={"My position at Exove was a front-end developer which mostly included work with Javascript, SASS, HTML, PHP, Drupal and Vagrant and development that was done in agile sprints."}
