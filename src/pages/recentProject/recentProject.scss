@@ -1,0 +1,10 @@
+@import "../../components/global/global";
+
+.page__title_project {
+  width: 75%;
+  max-width: 100% !important;
+
+  @include breakpoint-small {
+    width: 100%;
+  }
+}

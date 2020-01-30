@@ -5,21 +5,22 @@
     padding: $size-three 0;
     width: 75%;
     z-index: 1;
+    margin-bottom: $size-five;
 
     @include breakpoint-small {
       width: 100%;
       margin: auto;
     }
 
-    .page__title {
-      max-width: none;
-    }
-
     h2 {
-      font-size: $size-one-plus-half;
+      font-size: $size-two;
       font-weight: 600;
       max-width: 20rem;
       padding-bottom: $size-one;
+
+      @include breakpoint-small {
+        font-size: $size-one-plus-half;
+      }
     }
 
     h2, h3 {
@@ -36,11 +37,11 @@
       font-weight: 200;
       max-width: 20rem;
       color: $text-gray;
-      margin: 0 $size-five $size-three 0;
+      margin: 0 $size-five $size-two 0;
 
       @include breakpoint-medium {
         max-width: 100%;
-        margin: 0 0 $size-three 0;
+        margin: 0 0 $size-two 0;
       }
     }
   }
@@ -51,7 +52,47 @@
 
     @include default-flex($justify: space-between, $align: flex-start, $direction: row);
     
-    &_image {
+    &_image_first {
+      background-image: url(woltL.PNG);
+      background-size: cover;
+      height: 25rem;
+      width: 100%;
+      max-width: 35rem;
+      position: relative;
+      cursor: pointer;
+      outline: 1px solid transparent;
+      
+      @include default-transition;
+
+      @include breakpoint-medium {
+        max-width: 100%;
+      }
+
+      &:hover {
+        outline: 1px solid white;
+        outline-offset: -$size-one;
+      }
+
+      &::before {
+        background-image: url(wolt.PNG);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+        height: 25rem;
+        width: 17rem;
+        position: absolute;
+        bottom: -15%;
+        left: -15%;
+
+        @include breakpoint-medium {
+          max-width: 100%;
+          left: 0%;
+          bottom: -10%;
+        }
+      }
+    }
+
+    &_image_second {
       background-image: url(myraL.PNG);
       background-size: cover;
       height: 25rem;
@@ -96,7 +137,7 @@
       font-weight: 800;
       display: block;
       color: $text-white;
-      padding-bottom: $size-one-half;
+      padding-top: $size-one;
 
       @include default-transition;
 

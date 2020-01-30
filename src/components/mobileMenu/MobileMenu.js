@@ -6,7 +6,7 @@ const MobileMenu = ({ open, setMobile }) =>
     <nav className="mobile__menu" 
       style={{width: open ? "100%" : "0", opacity: open ? "1" : "0"}}>
       <NavLink exact to="/project" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
-        <h3 aria-label="Navigation link">Project</h3>
+        <h3 aria-label="Navigation link">Projects</h3>
       </NavLink>
       <NavLink exact to="/work" activeClassName="active" open={open} onClick={() => setMobile(!open)}>
         <h3 aria-label="Navigation link">Work</h3>

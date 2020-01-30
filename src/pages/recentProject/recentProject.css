@@ -1,0 +1,11 @@
+.page__title_project {
+  width: 75%;
+  max-width: 100% !important;
+}
+
+@media (max-width: 900px) {
+  .page__title_project {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=recentProject.css.map */
