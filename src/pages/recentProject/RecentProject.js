@@ -19,9 +19,9 @@ const RecentProject = () => {
 		<DefaultContainerFlex
 			content={
 				<>
-				<h1 className="page__title page__title_project">My latest<br/>project</h1>
+				<h1 className="page__title page__title_project">My latest<br/>projects</h1>
 					<Project 
-						title={"WOLT - a lightweight version to imitate the food courier site"}
+						title={"FOOD COURIER SITE - a lightweight version to imitate WOLT's service"}
 						metaTitle={"WORK IN PROGRESS"}
 						textUpper={"As my current projects at work are under NDA, I made this project for fun to imitate the excellent site WOLT has for their services. At the moment it has a working front and back with a connection to a database that enables a restaurant search and proximity checks."}
 						textLower={"Excluding the small libraries used, this application is mostly built with React, Node.js, MongoDB with geolocation and latest context API. Basic design has been done in Figma."}
